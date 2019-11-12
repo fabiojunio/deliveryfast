@@ -1,0 +1,20 @@
+<ActionBar class="action-bar">
+    <Label text="Delivery Fast" 
+           class="action-bar-title" 
+           android:horizontalAlignment="left">
+    </Label>
+
+    <ng-cotainer *ngIf="platform.isAndroid">
+        <ActionItem text="Menu" 
+                    android.position="popup">
+        </ActionItem>
+
+        <ActionItem text="Pedido"
+                    android.position="popup">
+        </ActionItem>
+
+        <ActionItem text="Perfil"
+                    android.position="popup">
+        </ActionItem>
+    </ng-cotainer>
+</ActionBar>
